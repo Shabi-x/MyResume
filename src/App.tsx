@@ -1,12 +1,16 @@
-import './App.css';
+import './App.scss';
+import BasicInfo from './components/BasicInfo';
+import InternShip from './components/InternShipExperience';
+import Project from './components/ProjectExperience';
 
-const App = () => {
+const Resume = () => {
   return (
     <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
+      <BasicInfo />
+      <InternShip />
+      <Project />
     </div>
   );
 };
 
-export default App;
+export default Resume;
