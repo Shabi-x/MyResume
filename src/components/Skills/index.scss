@@ -1,0 +1,14 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  list-style-type: disc;
+  padding: 5px 0;
+  padding-left: 20px;
+
+  .skill {
+    font-size: 11px;
+    padding: 1px 0;
+    font-weight: 300;
+  }
+}

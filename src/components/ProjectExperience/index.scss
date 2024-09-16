@@ -1,0 +1,51 @@
+.project-item {
+  border-radius: 5px;
+  padding: 5px 0 0 0;
+  font-weight: 300;
+  .project-header {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    .project-name {
+      font-size: 13px;
+      color: #333;
+    }
+    .response-job {
+      font-size: 12px;
+      padding-left: 5px;
+      color: #666;
+      align-self: flex-end;
+    }
+    .project-time {
+      font-size: 10px;
+      color: #666;
+      margin: 0 0 0 auto;
+    }
+  }
+
+  .project-description {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .project-details {
+    margin: 2px 0;
+    list-style-type: disc;
+    padding-left: 20px;
+    li {
+      font-size: 11px;
+    }
+  }
+
+  .tech-stack {
+    font-size: 12px;
+    color: #007bff;
+  }
+}
+
+.hypelink {
+  font-size: 12px;
+  font-weight: 500;
+  text-underline-offset: 3px;
+  color: #007bff;
+}

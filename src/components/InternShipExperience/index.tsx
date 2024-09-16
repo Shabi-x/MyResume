@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.scss';
 import kuaishouLogo from '../../logo/kuaishou.png';
+import qingyouLogo from '../../logo/qingyou.png';
 // 定义实习经历类型
 interface InternShipType {
   time: string;
@@ -25,13 +26,13 @@ const mock: InternShipType[] = [
     time: '2019.07-2024.09',
     company: '富士康 | 货物搬运工',
     job: '前端开发实习生',
-    commpanyLogoUrl: kuaishouLogo,
+    commpanyLogoUrl: qingyouLogo,
     discription: '负责前端开发，主要负责项目的前端开发，包括前端页面的设计、开发、测试、上线等工作。',
     workContent: [
-      '利用HTML、CSS、JavaScript、jQuery、Bootstrap等技术进行前端页面',
+      '利用HTML、CSS、JavaScript、jQuery、Bootstrap等技术进行前端页面利用HTML、CSS、JavaScript、jQuery、Bootstrap等技术进行前端页面',
       '使用React、Vue、Angular等框架进行前端项目的开发',
     ],
-    techStack: ['Webpack', 'Babel', 'Jest', 'Mocha'],
+    techStack: ['React', 'Antd', 'Redux', 'Swagger'],
   },
   {
     time: '2023.07 - 至今',
@@ -45,7 +46,7 @@ const mock: InternShipType[] = [
       '使用Webpack、Babel等工具进行前端项目的构建',
       '使用Jest、Mocha等测试框架进行前端项目的测试',
     ],
-    techStack: ['React', 'TS', 'Jest', 'Vite'],
+    techStack: ['React', 'TS', 'Monorepo', 'Vite'],
   }
 ];
 
