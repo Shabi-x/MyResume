@@ -54,7 +54,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ projectName, responseJob, pro
         ))}
       </ul>
       <div className="techStack">
-        <span style={{ fontWeight: 'bold', fontSize: '12px' }}>技术栈：</span>
+        <span style={{ fontWeight: 'bold', fontSize: '18px' }}>技术栈：</span>
         {techStack.map((stack, index) => {
           return <div key={index} className="stack">{stack}</div>;
         })}

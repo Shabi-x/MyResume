@@ -60,7 +60,7 @@ const InternShipItem: React.FC<InternShipItemProps> = ({ time, company, job, com
         <img src={commpanyLogoUrl} className="company-logo" />
       </div>
       <div className="discription">
-        <div className="detail"><span style={{ fontWeight: 'bold', fontSize: '12px' }}>简介：</span>{discription}</div>
+        <div className="detail"><span style={{ fontWeight: 'bold', fontSize: '18px' }}>简介：</span>{discription}</div>
         {workContent.map((content, index) => (
           <div key={index} className="discription-line">
             <div className="circle">
@@ -69,7 +69,7 @@ const InternShipItem: React.FC<InternShipItemProps> = ({ time, company, job, com
         ))}
       </div>
       <div className="techStack">
-        <span style={{ fontWeight: 'bold', fontSize: '12px' }}>技术栈：</span>
+        <span style={{ fontWeight: 'bold', fontSize: '18px' }}>技术栈：</span>
         {techStack.map((stack, index) => {
           return <div key={index} className="stack">{stack}</div>;
         })}</div>

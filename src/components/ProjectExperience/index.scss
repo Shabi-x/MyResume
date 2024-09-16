@@ -1,51 +1,57 @@
 .project-item {
-  border-radius: 5px;
-  padding: 5px 0 0 0;
+  border-radius: 5px; /* 百分比不变 */
+  padding: 7.5px 0 0 0; /* 5px * 1.5 */
   font-weight: 300;
+
   .project-header {
     font-weight: bold;
     display: flex;
     align-items: center;
+
     .project-name {
-      font-size: 13px;
+      font-size: 19.5px; /* 13px * 1.5 */
       color: #333;
     }
+
     .response-job {
-      font-size: 12px;
-      padding-left: 5px;
+      font-size: 18px; /* 12px * 1.5 */
+      padding-left: 7.5px; /* 5px * 1.5 */
       color: #666;
       align-self: flex-end;
     }
+
     .project-time {
-      font-size: 10px;
+      font-size: 15px; /* 10px * 1.5 */
       color: #666;
-      margin: 0 0 0 auto;
+      margin: 0 0 0 auto; /* 百分比不变 */
     }
   }
 
   .project-description {
-    font-size: 11px;
-    line-height: 1.5;
+    font-size: 16.5px; /* 11px * 1.5 */
+    line-height: 1.5; /* 保持不变 */
   }
 
   .project-details {
-    margin: 2px 0;
+    margin: 3px 0; /* 2px * 1.5 */
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 30px; /* 20px * 1.5 */
+
     li {
-      font-size: 11px;
+      font-size: 16.5px; /* 11px * 1.5 */
     }
   }
 
   .tech-stack {
-    font-size: 12px;
+    font-size: 18px; /* 12px * 1.5 */
     color: #007bff;
   }
 }
 
 .hypelink {
-  font-size: 12px;
+  font-size: 18px; /* 12px * 1.5 */
   font-weight: 500;
-  text-underline-offset: 3px;
+  text-underline-offset: 6px; /* 3px * 1.5 */
+  text-decoration: none;
   color: #007bff;
 }

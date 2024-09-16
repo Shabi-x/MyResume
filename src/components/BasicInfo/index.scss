@@ -1,41 +1,47 @@
 .person {
-  width: 100%;
+  width: 100%; /* 放大 1.5 倍 */
+
   .person-info {
-    width: 100%;
+    width: 100%; /* 放大 1.5 倍 */
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
     .name {
       color: #4b7bec;
-      font-size: 26px;
+      font-size: 39px; /* 26px * 1.5 */
       font-weight: 600;
-      letter-spacing: 3px;
+      letter-spacing: 4.5px; /* 3px * 1.5 */
     }
+
     .phoneAndEmail {
       font-weight: 600;
       color: #a5b1c2;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px; /* 1px * 1.5 */
+
       span {
-        font-size: 12px;
+        font-size: 18px; /* 12px * 1.5 */
       }
     }
   }
+
   .basic-info-title {
-    width: 100%;
+    width: 100%; /* 放大 1.5 倍 */
     display: flex;
     align-items: center;
-    padding: 5px 0;
-    font-size: 14px;
+    padding: 7.5px 0; /* 5px * 1.5 */
+    font-size: 21px; /* 14px * 1.5 */
     font-weight: 600;
     color: #4b7bec;
-    border-bottom: 2px solid #4b7bec;
+    border-bottom: 3px solid #4b7bec; /* 2px * 1.5 */
+
     .title {
-      font-size: 11px;
+      font-size: 16.5px; /* 11px * 1.5 */
       font-weight: 600;
       color: #a5b1c2;
-      letter-spacing: 1px;
-      padding-left: 11px;
+      letter-spacing: 1.5px; /* 1px * 1.5 */
+      padding-left: 16.5px; /* 11px * 1.5 */
       align-self: flex-end;
     }
   }
@@ -44,11 +50,12 @@
 .information {
   display: flex;
   flex-wrap: wrap;
-  padding: 2px 0 0 0;
+  padding: 3px 0 0 0; /* 2px * 1.5 */
+
   .info-item {
-    width: 50%;
-    font-size: 12px;
+    width: 50%; /* 50% * 1.5，放大后可能需要重新设计布局 */
+    font-size: 18px; /* 12px * 1.5 */
     color: #505050;
-    padding: 2px 0;
+    padding: 3px 0; /* 2px * 1.5 */
   }
 }
