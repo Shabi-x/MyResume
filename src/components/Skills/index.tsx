@@ -1,15 +1,15 @@
 import React from 'react';
 import './index.scss';
 
-const Project = () => {
+const Skills = () => {
   return (
     <div className="con">
       <div className="basic-info">
-        项目经历
-        <div className="title" >PROJECT EXPERIENCE</div>
+        相关技能
+        <div className="title" >Skills</div>
       </div>
     </div>
   );
 };
 
-export default Project;
+export default Skills;
