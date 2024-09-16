@@ -30,6 +30,7 @@
   .project-description {
     font-size: 16.5px; /* 11px * 1.5 */
     line-height: 1.5; /* 保持不变 */
+    padding: 5px 0; /* 5px * 1.5 */
   }
 
   .project-details {
@@ -49,9 +50,9 @@
 }
 
 .hypelink {
-  font-size: 18px; /* 12px * 1.5 */
-  font-weight: 500;
-  text-underline-offset: 6px; /* 3px * 1.5 */
+  font-size: 16.5px; /* 12px * 1.5 */
+  // font-weight: 500;
+  // text-underline-offset: 6px; /* 3px * 1.5 */
   text-decoration: none;
   color: #007bff;
 }

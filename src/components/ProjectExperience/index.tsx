@@ -10,7 +10,7 @@ const projectList = [
       <>
         南邮小程序，是
         <a className='hypelink' href="https://qingyou.njupt.edu.cn/" target="_blank">青柚工作室</a>
-        为师生提供课表，晨跑，一卡通，成绩查询，场地预约等功能的小程序，日活用户数突破1000万，月活用户1W+。
+        为师生提供课表，晨跑，一卡通，成绩查询，场地预约，电费充值等功能的小程序，日活用户1W+。
       </>
     ),
     projectList: [
