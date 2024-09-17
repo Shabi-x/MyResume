@@ -35,11 +35,13 @@
 
   .project-details {
     margin: 3px 0; /* 2px * 1.5 */
-    list-style-type: disc;
-    padding-left: 30px; /* 20px * 1.5 */
+    list-style-type: none;
+    // padding-left: 20px; /* 20px * 1.5 */
 
     li {
       font-size: 16.5px; /* 11px * 1.5 */
+      letter-spacing: 0.5px;
+      padding-bottom: 1.5px;
     }
   }
 

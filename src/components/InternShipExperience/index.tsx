@@ -23,30 +23,16 @@ interface InternShipItemProps {
 }
 const mock: InternShipType[] = [
   {
-    time: '2019.07-2024.09',
-    company: '富士康 | 货物搬运工',
-    job: '前端开发实习生',
-    commpanyLogoUrl: qingyouLogo,
-    discription: '负责前端开发，主要负责项目的前端开发，包括前端页面的设计、开发、测试、上线等工作。',
-    workContent: [
-      '利用HTML、CSS、JavaScript、jQuery、Bootstrap等技术进行前端页面利用HTML、CSS、JavaScript、jQuery、Bootstrap等技术进行前端页面',
-      '使用React、Vue、Angular等框架进行前端项目的开发',
-    ],
-    techStack: ['React', 'Antd', 'Redux', 'Swagger'],
-  },
-  {
-    time: '2023.07 - 至今',
-    company: '胖东来 | 前端架构组',
+    time: '2024.07 - 2024.11',
+    company: '快手（北京海淀) |  企业应用部',
     job: '前端开发实习生',
     commpanyLogoUrl: kuaishouLogo,
-    discription: '负责前端页面的开发，主要负责项目的前端开发，包括前端页面的设计、开发、测试、上线等工作。',
+    discription: '实习期间负责快手内部ToB业务包括采购平台，规则权限中台，核算、发票平台等系统的搭建，开发，迭代；',
     workContent: [
-      '利用HTML、CSS、JavaScript、React、jQuery、Bootstrap等技术进行前端页面',
-      '使用React、Vue、Angular等框架进行前端项目的开发',
-      '使用Webpack、Babel等工具进行前端项目的构建',
-      '使用Jest、Mocha等测试框架进行前端项目的测试',
+      '阅读PRD文档，独立对接业务需求，完成多个产品需求迭代；接手并修复项目中的历史遗留问题',
+      '使用TS基本特性以及类型工具定义接口数据类型，使得代码结构更清晰，易于团队协作，维护；',
     ],
-    techStack: ['React', 'TS', 'Monorepo', 'Vite'],
+    techStack: ['React', 'TypeScript', 'Ant Design', 'Vite'],
   }
 ];
 
