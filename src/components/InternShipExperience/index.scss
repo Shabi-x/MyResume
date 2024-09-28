@@ -60,7 +60,7 @@
 }
 
 .discription {
-  width: 100%; /* 百分比不变 */
+  width: 100%;
   display: flex;
   flex-direction: column;
 
@@ -96,11 +96,11 @@
 .techStack {
   display: flex;
   align-items: center;
-  padding: 3px 0; /* 2px * 1.5 */
+  padding: 5px 0;
   gap: 7.5px; /* 5px * 1.5 */
 
   .stack {
-    font-size: 16.5px; /* 11px * 1.5 */
+    font-size: 16px; /* 11px * 1.5 */
     font-weight: 300;
     background-color: #e3edff;
     color: #2e86de;

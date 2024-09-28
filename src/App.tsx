@@ -1,12 +1,14 @@
-import BasicInfo from './components/BasicInfo';
-import InternShip from './components/InternShipExperience';
-import Project from './components/ProjectExperience';
-import './App.scss';
-import Skills from './components/Skills';
-import { usePDF } from 'react-to-pdf';
+import BasicInfo from "./components/BasicInfo";
+import InternShip from "./components/InternShipExperience";
+import Project from "./components/ProjectExperience";
+import "./App.scss";
+import Skills from "./components/Skills";
+import { usePDF } from "react-to-pdf";
 
 const Resume = () => {
-  const { toPDF, targetRef } = usePDF({ filename: 'MyResume.pdf' }); // 修改这里
+  const { toPDF, targetRef } = usePDF({
+    filename: "26届前端实习 梁少峻 南邮.pdf",
+  }); // 修改这里
 
   return (
     <div className="App">
