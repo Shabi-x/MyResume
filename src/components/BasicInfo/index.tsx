@@ -36,10 +36,16 @@ const BasicInfo = () => {
           </span>
           b22042219@njupt.edu.cn
         </div>
-        {/* <div className="info-item">
+        <a href="https://github.com/Shabi-x" className="info-item">
           <span style={{ fontWeight: "bold", fontSize: "18px" }}>Github：</span>
           https://github.com/Shabi-x
-        </div> */}
+        </a>
+        <a href="https://shabix.fun" className="info-item">
+          <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+            个人主页：
+          </span>
+          https://shabix.fun
+        </a>
         <div className="info-item-long">
           <span style={{ fontWeight: "bold", fontSize: "18px" }}>
             其余经历：
