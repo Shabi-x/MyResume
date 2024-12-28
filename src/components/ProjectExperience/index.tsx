@@ -8,15 +8,13 @@ const projectList = [
     projectName: "南邮小程序",
     responseJob: "（前端负责人）",
     projectTime: "2023.07 - 至今",
-    projectDescription: (
-      <>
-        南邮小程序，是 青柚工作室
-        为师生提供课表，晨跑，一卡通，成绩查询，场地预约，电费充值等功能而开发的微信小程序，日活用户1W+。
-      </>
-    ),
+    projectDescription:
+      "南邮小程序(官方用名“南京邮电大学”)，是青柚工作室为师生提供课表，晨跑，一卡通，成绩查询，场地预约，电费充值等功能而开发的微信小程序，日活用户1W+。",
     projectList: [
-      "开发业务模块：校园资讯（富文本渲染，文件预览，列表无限滚动）、重新搭建登录逻辑、重构图书馆、消息盒子等模块；同时担任小程序客服，根据全校师生反馈及时Oncall；",
-      "业务代码模块化：将UI 与业务逻辑解耦；基于IoC 对于业务代码进行统一封装使用；对于请求缓存，状态管理，日志跟踪实现封装；积极拥抱Taro 3.6/4.0更新,不断优化，迭代；",
+      "开发业务：校园资讯（利用dangerouslySetInnerHTML实现小程序富文本渲染、附件预览）；针对微信丢失、本硕连读用户账号变更问题搭建用户解绑页，设计使用状态控制动画的思路实现登录过程中复杂的动画效果；利用IntersectionObserver实现校园资讯页列表无限滚动；仿照豆瓣UI重构图书馆模块，实现对于书籍详细信息，图书馆藏，借阅记录的查阅；开发消息盒子通知等模块；",
+      "业务代码模块化：将UI层与业务逻辑层解耦，实现数据驱动与UI渲染的分离；实现pendingCacheQueue对于请求做缓存优化，状态管理、接入了redux-logger中间件，实现日志跟踪实现封装；",
+      "工程化配置：推动使用pnpm管理，依赖升级，配置代码风格规范；积极拥抱Taro 3.6/4.0更新，不断优化师生日常使用体验；",
+      "同时担任企业微信侧南邮小程序客服，根据全校师生反馈问题思考解决方案，及时Oncall；",
     ],
     techStack: ["React", "TypeScript", "Taro", "Redux-toolkit", "pnpm"],
   },
@@ -28,12 +26,12 @@ const projectList = [
     projectDescription:
       "南邮年度报告单，是一款汇总南京邮电大学本科生日常数据的H5应用，通过前端技术实现复杂的动画和交互逻辑，在年末用户回顾汇总数据时沉浸，流畅的视、听、交互体验；",
     projectList: [
-      "设计并使用CSS动画、过渡实现了较为复杂的2D， 3D动画效果；",
+      "设计并使用高性能的CSS动画（keyframes，伪元素）实现了较为复杂的2D， 3D动画交互效果，根据翻页变量控制动画显隐时机；",
       "基于vw/rem/clamp方案处理移动端适配问题，有效解决不同机型的尺寸适配问题；",
       "引入FontFaceObserver，封装usePreLoadImage，usePreloadFonts等hook，实现静态资源预加载，避免在静态资源未加载完成时影响页面呈现，改善用户体验；",
       "将老旧的npm/webpack项目基于pnpm/Vite重新搭建，提升构建、热更新速度，优化包管理体验 ；",
     ],
-    techStack: ["React", "TypeScript", "Lottie", "Vite"],
+    techStack: ["React", "TypeScript", "SCSS", "Lottie", "Vite"],
   },
 ];
 
