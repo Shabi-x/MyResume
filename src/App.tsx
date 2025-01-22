@@ -4,6 +4,7 @@ import Project from "./components/ProjectExperience";
 import "./App.scss";
 import Skills from "./components/Skills";
 import { usePDF } from "react-to-pdf";
+import OpenSource from "./components/openSource";
 
 const Resume = () => {
   const { toPDF, targetRef } = usePDF({
@@ -18,6 +19,7 @@ const Resume = () => {
       {/* 修改这里 */}
       <div className="content" ref={targetRef}>
         <BasicInfo />
+        <OpenSource />
         <InternShip />
         <Project />
         <Skills />
