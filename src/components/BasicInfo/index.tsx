@@ -36,15 +36,21 @@ const BasicInfo = () => {
           </span>
           b22042219@njupt.edu.cn
         </div>
-        <div className="info-item">
+        <a href="https://github.com/Shabi-x" className="info-item">
           <span style={{ fontWeight: "bold", fontSize: "18px" }}>Github：</span>
           https://github.com/Shabi-x
-        </div>
+        </a>
+        <a href="https://shabix.fun" className="info-item">
+          <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+            个人主页：
+          </span>
+          https://shabix.fun
+        </a>
         <div className="info-item-long">
           <span style={{ fontWeight: "bold", fontSize: "18px" }}>
             其余经历：
           </span>
-          青柚工作室主席团，计软院科协主席团、讲师；数次获得社会优秀工作奖奖学金；大学生英语能力竞赛国三；
+          青柚工作室主席团，计软院科协主席团、讲师；数次获得社会优秀工作奖奖学金；大学生英语能力竞赛国三；多次参与青柚技术分享会，探索并分享编程领域知识分享；
         </div>
       </div>
     </div>
