@@ -8,14 +8,27 @@ export default defineConfig({
     pluginSass()
   ],
   html: {
-    template: './public/index.html'
+    template: './public/index.html',
+    title: '26届前端实习简历'
   },
   output: {
     distPath: {
-      root: 'dist'
+      root: 'dist',
+      html: '.',
+      js: 'static/js',
+      css: 'static/css',
+    },
+    filename: {
+      js: '[name].[contenthash:8].js',
+      css: '[name].[contenthash:8].css'
     }
   },
   server: {
     port: 3000
+  },
+  source: {
+    entry: {
+      index: './src/index.tsx'
+    }
   }
 });
