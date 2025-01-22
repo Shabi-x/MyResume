@@ -7,7 +7,7 @@ const mock: SkillsProps = [
   '有规范前端工作流、配置例如ESLint、Prettier、Commitlint、Husky的经验;',
   '熟悉常用Git命令，具备丰富的团队协作开发经历，有分支管理，版本回退的经验；',
   '了解Taro、Tauri、ReactNative等跨端方案，有一定开发经验；',
-  '英文能力CET6 ，能熟练阅读英文技术文档，关注国内外论坛了解前端新技术变化方向；'
+  '英文能力CET6 ，能熟练阅读英文技术文档，关注前端开源社区、论坛，保持对前端新技术的热爱；'
 ];
 const Skills = () => {
   return (

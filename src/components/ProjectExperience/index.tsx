@@ -26,7 +26,7 @@ const projectList = [
     projectDescription:
       "南邮年度报告单，是一款汇总南京邮电大学本科生日常数据的H5应用，通过前端技术实现复杂的动画和交互逻辑，在年末用户回顾汇总数据时沉浸，流畅的视、听、交互体验；",
     projectList: [
-      "设计并使用高性能的CSS动画（keyframes，伪元素）实现了较为复杂的2D， 3D动画交互效果，根据翻页变量控制动画显隐时机；",
+      "实现高性能的CSS动画（keyframes，伪元素）实现了较为复杂的2D， 3D动画交互效果，根据翻页变量控制动画显隐时机；",
       "基于vw/rem/clamp方案处理移动端适配问题，有效解决不同机型的尺寸适配问题；",
       "引入FontFaceObserver，封装usePreLoadImage，usePreloadFonts等hook，实现静态资源预加载，避免在静态资源未加载完成时影响页面呈现，改善用户体验；",
       "将老旧的npm/webpack项目基于pnpm/Vite重新搭建，提升构建、热更新速度，优化包管理体验 ；",
@@ -97,10 +97,8 @@ const Project: React.FC = () => {
   return (
     <div className="con">
       <div className="basic-info">
-        项目经历 <span style={{ fontSize: "18px" }}>（青柚工作室）</span>
-        <div className="qingyoulink">
-          https://qingyou.njupt.edu.cn/ <span></span>
-        </div>
+        项目经历 
+        <div className="title">Project Experience</div>
         <img src={qingyouLogo} className="company-logo" />
       </div>
 

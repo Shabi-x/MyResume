@@ -9,7 +9,7 @@ const BasicInfo = () => {
       </div>
       <div className="basic-info-title">
         基本信息
-        <div className="title">BASIC INFO</div>
+        <div className="title">Basic Information</div>
       </div>
       <div className="information">
         <div className="info-item">
@@ -46,7 +46,7 @@ const BasicInfo = () => {
           </span>
           https://shabix.fun
         </a>
-        <div className="info-item-long">
+        <div className="info-item-long" style={{fontWeight: "300"}}>
           <span style={{ fontWeight: "bold", fontSize: "18px" }}>
             其余经历：
           </span>

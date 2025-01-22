@@ -1,0 +1,28 @@
+.openSource {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .discription-line {
+    width: 100%;  
+    display: flex;
+    font-size: 16.5px;  
+    padding: 5px 0;  
+    font-weight: 300;
+
+    .circle {
+      width: 22.5px;  
+      min-width: 22.5px;  
+      height: 22.5px;  
+      border-radius: 50%;
+      background-color: #70a1ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 12px;  
+      font-size: 16.5px;  
+      color: #fff;
+      font-weight: 800;
+    }
+  }
+}
+
