@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Resume from './app';
+import Resume from './App';
 
 
 const rootEl = document.getElementById('root');

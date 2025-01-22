@@ -7,4 +7,15 @@ export default defineConfig({
     pluginReact(),
     pluginSass()
   ],
+  html: {
+    template: './public/index.html'
+  },
+  output: {
+    distPath: {
+      root: 'dist'
+    }
+  },
+  server: {
+    port: 3000
+  }
 });
