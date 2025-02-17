@@ -2,7 +2,7 @@ import "./index.scss";
 
 type SkillsProps = Array<string>;
 const mock: SkillsProps = [
-  "参与字节跳动VisActor可视化开源大赛，通过阅读VChart源码，贡献VChart-theme，VChart-plugins 源码解析文档；",
+  "参与字节跳动VisActor可视化开源大赛，通过阅读VChart/VTable源码，贡献VTable场景树模块、VChart-theme，VChart-plugins 源码解析文档共10篇；",
   "活跃于前端开源社区，为Semi-Design，TDesign等开源组件库解决issue，贡献pr数达10+；",
 ];
 const OpenSource = () => {
