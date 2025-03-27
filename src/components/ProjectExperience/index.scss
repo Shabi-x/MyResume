@@ -79,3 +79,116 @@
   height: 25px; /* 23px * 1.5 */
   margin: 0 0 0 auto;
 }
+//
+
+.con {
+  width: 100%; /* 百分比不变 */
+  display: flex;
+  flex-direction: column;
+
+  .basic-info {
+    width: 100%; /* 百分比不变 */
+    display: flex;
+    align-items: center;
+    padding: 3px 0; /* 2px * 1.5 */
+    font-size: 21px; /* 14px * 1.5 */
+    font-weight: 600;
+    color: #4b7bec;
+    border-bottom: 3px solid #4b7bec; /* 2px * 1.5 */
+
+    .title {
+      font-size: 16.5px; /* 11px * 1.5 */
+      font-weight: 600;
+      color: #a5b1c2;
+      letter-spacing: 1.5px; /* 1px * 1.5 */
+      padding-left: 16.5px; /* 11px * 1.5 */
+      align-self: flex-end;
+    }
+  }
+}
+
+.item-header {
+  width: 100%; /* 百分比不变 */
+  display: flex;
+  align-items: center;
+  margin: 7.5px 0; /* 5px * 1.5 */
+  background-color: #e3edff;
+  padding: 3px 7.5px; /* 2px * 1.5 和 5px * 1.5 */
+
+  .time {
+    font-size: 16.5px; /* 11px * 1.5 */
+    font-weight: 400;
+    letter-spacing: 1.5px; /* 1px * 1.5 */
+    color: #707780;
+  }
+
+  .company {
+    font-size: 16.5px; /* 11px * 1.5 */
+    font-weight: 800;
+    color: #4b7bec;
+    margin: 0 16.5px; /* 11px * 1.5 */
+  }
+
+  .job {
+    font-size: 16.5px; /* 11px * 1.5 */
+    font-weight: 400;
+    letter-spacing: 1.5px; /* 1px * 1.5 */
+    color: #707780;
+  }
+
+  .company-logo {
+    height: 25px; /* 23px * 1.5 */
+    margin: 0 0 0 auto;
+  }
+}
+
+.discription {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .detail {
+    font-size: 16.5px; /* 11px * 1.5 */
+    font-weight: 300;
+  }
+
+  .discription-line {
+    width: 100%; /* 百分比不变 */
+    display: flex;
+    font-size: 16.5px; /* 11px * 1.5 */
+    padding: 5px 0; /* 1px * 1.5 */
+    font-weight: 300;
+
+    .circle {
+      width: 22.5px; /* 15px * 1.5 */
+      min-width: 22.5px; /* 15px * 1.5 */
+      height: 22.5px; /* 15px * 1.5 */
+      border-radius: 50%;
+      background-color: #70a1ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 12px; /* 8px * 1.5 */
+      font-size: 16.5px; /* 11px * 1.5 */
+      color: #fff;
+      font-weight: 800;
+    }
+  }
+}
+
+.techStack {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  gap: 7.5px; /* 5px * 1.5 */
+
+  .stack {
+    font-size: 16px; /* 11px * 1.5 */
+    font-weight: 300;
+    background-color: #e3edff;
+    color: #2e86de;
+    font-weight: 600; /* 保持不变 */
+    border-radius: 5px;
+    padding: 3px 7.5px; /* 2px * 1.5 和 5px * 1.5 */
+  }
+}

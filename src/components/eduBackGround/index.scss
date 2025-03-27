@@ -1,0 +1,58 @@
+
+.school-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+
+  .info-item {
+    display: flex;
+    align-items: start;
+    
+    .info-key {
+      display: flex;
+      font-weight: bold;
+      white-space: nowrap; 
+    }
+    .info-value {
+      color: #666;
+    }
+  }
+}
+
+.school-period{
+  width: 100%; /* 百分比不变 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 7.5px 0;  
+  background-color: #e3edff;
+  font-weight: 800;
+  padding: 5px 20px; 
+
+  .period {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #707780;
+  }
+
+  .university {
+    font-size: 18px; /* 11px * 1.5 */
+    font-weight: 800;
+    color: #4b7bec;
+    margin: 0 16.5px; /* 11px * 1.5 */
+  }
+
+  .college-major {
+    font-size: 18px; /* 11px * 1.5 */
+    font-weight: 800;
+    letter-spacing: 1.5px; /* 1px * 1.5 */
+    color: #707780;
+  }
+
+  .company-logo {
+    height: 25px; /* 23px * 1.5 */
+    margin: 0 0 0 auto;
+  }
+}

@@ -5,9 +5,16 @@
     width: 100%; /* 放大 1.5 倍 */
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: space-between;
+    .avatar {
+      background-image: url(../BasicInfo/avatar.jpg);
+      display: block;
+      width: 120px;
+      height: 150px;
+      background-size: 100% 100%;
+    }
     .name {
       color: #4b7bec;
       font-size: 39px; /* 26px * 1.5 */
@@ -60,6 +67,7 @@
     padding: 3px 0; /* 2px * 1.5 */
   }
   .info-item-long {
+    display: flex;
     width: 100%;
     font-size: 18px; /* 12px * 1.5 */
     color: #505050;

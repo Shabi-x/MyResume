@@ -5,33 +5,17 @@ import "./index.scss";
 
 const projectList = [
   {
-    projectName: "南邮小程序",
-    responseJob: "（前端负责人）",
-    projectTime: "2023.07 - 至今",
-    projectDescription: (
-      <>
-        南邮小程序，是 青柚工作室
-        为师生提供课表，晨跑，一卡通，成绩查询，场地预约，电费充值等功能而开发的微信小程序，日活用户1W+。
-      </>
-    ),
-    projectList: [
-      "开发业务模块：校园资讯（富文本渲染，文件预览，列表无限滚动）、重新搭建登录逻辑、重构图书馆、消息盒子等模块；同时担任小程序客服，根据全校师生反馈及时Oncall；",
-      "业务代码模块化：将UI 与业务逻辑解耦；基于IoC 对于业务代码进行统一封装使用；对于请求缓存，状态管理，日志跟踪实现封装；积极拥抱Taro 3.6/4.0更新,不断优化，迭代；",
-    ],
-    techStack: ["React", "TypeScript", "Taro", "Redux-toolkit", "pnpm"],
-  },
-  {
-    projectName: "南邮年度报告单",
+    projectName: "基于比较器（LVDS接口）的中短波软件无线电系统",
     responseJob: "（前端负责人）",
     projectTime: "2024.02 - 2024.03",
-    link: " https://wechat.njupt.edu.cn/topic2024/",
+    link: " ",
     projectDescription:
-      "南邮年度报告单，是一款汇总南京邮电大学本科生日常数据的H5应用，通过前端技术实现复杂的动画和交互逻辑，在年末用户回顾汇总数据时沉浸，流畅的视、听、交互体验；",
+      "独立开发了一个基于1位ADC（比较器）的软件定义无线电系统，实现了AM与FM广播的解调功能，相当于一个中短波电台的功能。通过高效的信号处理算法，成功接收和解码无线电信号，具备低功耗低成本和高性能的特点。（所有工作均为本人独立完成）",
     projectList: [
-      "设计并使用CSS动画、过渡实现了较为复杂的2D， 3D动画效果；",
-      "基于vw/rem/clamp方案处理移动端适配问题，有效解决不同机型的尺寸适配问题；",
-      "引入FontFaceObserver，封装usePreLoadImage，usePreloadFonts等hook，实现静态资源预加载，避免在静态资源未加载完成时影响页面呈现，改善用户体验；",
-      "将老旧的npm/webpack项目基于pnpm/Vite重新搭建，提升构建、热更新速度，优化包管理体验 ；",
+      "采样与量化：与传统的SDR使用多位ADC（模数转换器）不同，1bitSDR使用LVDS差分对进行采样。这意味着每个采样值只能是0或1，代表信号的两个状态。这种方式可以大幅度降低硬件复杂性和功耗以及成本。",
+      "数字信号处理（DSP）：接下来的处理主要依赖于数字信号处理算法。由于信号已经以1位的形式表示，通常需要使用专门的算法来恢复原始信号的信息。这些算法包括过采样、噪声整形、数字滤波和抽取等，能够在低信噪比的条件下有效提取信号。",
+      "解调与输出：NCO+查找表产生解调所需的本地载波，经过混频器产生IQ两路正交信号后经过CIC级联积分梳状滤波器滤除高频噪声（梳状滤波器通过差分运算器实现，用于消除积分器中的延迟效应。其结构与积分器相反）。解调器通过对输入 I 和 Q 信号的平方和求平方根，恢复出调制信号的幅度。",
+      "所获成果：2024全国大学生嵌入式系统设计竞赛FPGA赛道国家级一等奖"
     ],
     techStack: ["React", "TypeScript", "Lottie", "Vite"],
   },
@@ -39,7 +23,7 @@ const projectList = [
 
 interface ProjectType {
   projectName: string;
-  responseJob: string;
+  responseJob?: string;
   projectTime: string;
   projectDescription: React.ReactNode;
   projectList: string[];
@@ -48,7 +32,7 @@ interface ProjectType {
 
 interface ProjectItemProps {
   projectName: string;
-  responseJob: string;
+  responseJob?: string;
   projectTime: string;
   projectDescription: React.ReactNode;
   projectList: string[];
@@ -69,9 +53,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
     <div className="project-item">
       <div className="project-header">
         <div className="project-name">{projectName}</div>
-        <div className="response-job">{responseJob}</div>
-        <div className="link">{link}</div>
-        <div className="project-time">{projectTime}</div>
+        {/* <div className="response-job">{responseJob}</div>
+        <div className="link">{link}</div> */}
+        {/* <div className="project-time">{projectTime}</div> */}
       </div>
       <div className="project-description">{projectDescription}</div>
       <ul className="project-details">
@@ -81,7 +65,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
           </li>
         ))}
       </ul>
-      <div className="techStack">
+      {/* <div className="techStack">
         <span style={{ fontWeight: "bold", fontSize: "18px" }}>技术栈：</span>
         {techStack.map((stack, index) => {
           return (
@@ -90,7 +74,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
             </div>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -99,11 +83,8 @@ const Project: React.FC = () => {
   return (
     <div className="con">
       <div className="basic-info">
-        项目经历 <span style={{ fontSize: "18px" }}>（青柚工作室）</span>
-        <div className="qingyoulink">
-          https://qingyou.njupt.edu.cn/ <span></span>
-        </div>
-        <img src={qingyouLogo} className="company-logo" />
+        项目经历
+        <div className="title">Project Experience</div>
       </div>
 
       <div className="project-list">

@@ -8,8 +8,17 @@
   justify-content: space-between;
 
   .skill {
-    font-size: 16.5px; /* 11px * 1.5 */
+    font-size: 18px; /* 11px * 1.5 */
     padding: 1.5px 0; /* 1px * 1.5 */
     font-weight: 300; /* 保持不变 */
+  }
+}
+.skills {
+  .skill {
+    .time {
+      float: right;
+      color: #666;
+      font-style: italic;
+    }
   }
 }
