@@ -38,13 +38,13 @@ const BasicInfo = () => {
         </div>
         <a href="https://github.com/Shabi-x" className="info-item">
           <span style={{ fontWeight: "bold", fontSize: "18px" }}>Github：</span>
-          https://github.com/Shabi-x
+          <span className="link">https://github.com/Shabi-x</span>
         </a>
         <a href="https://shabix.fun" className="info-item">
           <span style={{ fontWeight: "bold", fontSize: "18px" }}>
             个人主页：
           </span>
-          https://shabix.fun
+          <span className="link">https://shabix.fun</span>
         </a>
         <div className="info-item-long" style={{fontWeight: "300"}}>
           <span style={{ fontWeight: "bold", fontSize: "18px" }}>

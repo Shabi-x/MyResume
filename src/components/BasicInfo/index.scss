@@ -70,3 +70,12 @@
     font-weight: 300;
   }
 }
+
+  a{
+    width: min-content;
+    font-size: 18px !important;
+    .link {    
+      text-decoration: underline !important;
+      color: #70a1ff !important;
+    }
+  }

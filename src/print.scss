@@ -19,6 +19,13 @@ $base-gap: 0.65mm;
     overflow: hidden !important;
   }
   
+  a{
+    width: min-content;
+    .link {    
+      text-decoration: underline !important;
+      color: #70a1ff !important;
+    }
+  }
   .App {
     width: 100% !important;
     max-width: 100% !important;
