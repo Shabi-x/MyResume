@@ -1,0 +1,168 @@
+/* 打印样式优化 */
+@media print {
+  /* 基本设置 */
+  * {
+    font-size: 10px !important; /* 减小所有字体大小 */
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+  
+  html, body {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  
+  .App {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  /* 隐藏不需要打印的元素 */
+  .download-btn, .print-instructions {
+    display: none !important;
+  }
+  
+  /* 内容容器 */
+  .content {
+    height: auto !important;
+    width: 100% !important;
+    padding: 5mm !important; /* 适当的内边距 */
+    margin: 0 !important;
+    page-break-inside: avoid !important;
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+    overflow: visible !important;
+    display: block !important;
+    transform: scale(0.95) !important; /* 稍微缩小以确保适应页面 */
+    transform-origin: top center !important;
+  }
+  
+  /* 基本信息部分 */
+  .person {
+    margin-bottom: 5mm !important;
+  }
+  
+  .person-info .name {
+    font-size: 16px !important;
+    letter-spacing: 1px !important;
+  }
+  
+  .basic-info-title, .basic-info {
+    font-size: 14px !important;
+    padding: 1mm 0 !important;
+    border-bottom-width: 1px !important;
+  }
+  
+  .basic-info-title .title, .basic-info .title {
+    font-size: 12px !important;
+    padding-left: 5mm !important;
+  }
+  
+  /* 信息项 */
+  .information .info-item, .information .info-item-long {
+    font-size: 9px !important;
+    padding: 0.5mm 0 !important;
+    line-height: 1.2 !important;
+  }
+  
+  /* 开源经历、实习经历、项目经历 */
+  .con {
+    margin-bottom: 3mm !important;
+  }
+  
+  /* 实习经历和项目经历的标题 */
+  .item-header, .project-header {
+    margin: 1mm 0 !important;
+    padding: 1mm !important;
+  }
+  
+  .item-header .time, .item-header .company, .item-header .job {
+    font-size: 9px !important;
+  }
+  
+  .item-header .company-logo {
+    height: 15px !important;
+  }
+  
+  /* 描述内容 */
+  .discription .detail {
+    font-size: 9px !important;
+  }
+  
+  .discription .discription-line {
+    font-size: 9px !important;
+    padding: 0.5mm 0 !important;
+    line-height: 1.2 !important;
+  }
+  
+  .discription .discription-line .circle {
+    width: 12px !important;
+    min-width: 12px !important;
+    height: 12px !important;
+    margin-right: 4px !important;
+    font-size: 8px !important;
+  }
+  
+  /* 项目描述 */
+  .project-description {
+    font-size: 9px !important;
+    margin-bottom: 1mm !important;
+  }
+  
+  /* 项目列表 */
+  .project-details li {
+    font-size: 9px !important;
+    margin-bottom: 0.5mm !important;
+    line-height: 1.2 !important;
+  }
+  
+  /* 技术栈 */
+  .techStack {
+    padding: 1mm 0 !important;
+    gap: 1mm !important;
+  }
+  
+  .techStack .stack, .techStack .tech {
+    font-size: 8px !important;
+    padding: 0.5mm 1mm !important;
+    border-radius: 2px !important;
+  }
+  
+  /* 技能部分 */
+  .skills li.skill {
+    font-size: 9px !important;
+    margin-bottom: 0.5mm !important;
+    line-height: 1.2 !important;
+  }
+  
+  /* 确保A4尺寸和边距 */
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+}
+
+/* 只在屏幕上显示的打印说明 */
+.print-instructions {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  text-align: center;
+  color: #495057;
+  font-size: 14px;
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  @media print {
+    display: none !important;
+  }
+}
