@@ -3,6 +3,7 @@
 - 用Web开发的体验打造属于你的专属个人简历！
 - 样式随心定制，发挥你的 CSS 创意，想怎么美就怎么美！
 - 支持内容复制和链接跳转，导出 PDF 也能保持原生交互体验！
+- 在线体验 demo！：[https://resume.shabix.fun/](https://resume.shabix.fun/)
 
 ## 🛠 技术栈
 
