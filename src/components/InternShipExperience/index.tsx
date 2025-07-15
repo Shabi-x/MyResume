@@ -47,7 +47,7 @@ const mock: InternShipType[] = [
   },
   {
     time: "2024.07 - 2024.11",
-    company: "快手（北京海淀) |  企业应用部",
+    company: "快手（北京海淀) |  企业应用部 - 财务研发组",
     job: "前端开发实习生",
     commpanyLogoUrl: kuaishouLogo,
     discription: "",
@@ -109,7 +109,7 @@ const InternShipItem: React.FC<InternShipItemProps> = ({
         ))}
       </div>
       <div className="techStack">
-        <span style={{ fontWeight: "bold", fontSize: "18px" }}>技术栈：</span>
+        <div style={{ fontWeight: "bold", fontSize: "18px" }} className="techStack-title">技术栈：</div>
         {techStack.map((stack, index) => {
           return (
             <div key={index} className="stack">
