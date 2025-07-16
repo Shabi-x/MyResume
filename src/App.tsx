@@ -6,6 +6,7 @@ import "./print.scss";
 import Skills from "./components/Skills";
 import OpenSource from "./components/openSource";
 import { useEffect } from "react";
+import githubLogo from "./logo/github.png";
 
 const Resume = () => {
 
@@ -26,15 +27,24 @@ const Resume = () => {
 
   return (
     <div className="App">
-      <button onClick={() => exportPDF()} className="download-btn">
-        Download as PDF
-      </button>{" "}
       <div className="content">
         <BasicInfo />
         <OpenSource />
         <InternShip />
         <Project />
         <Skills />
+      </div>
+
+      <div className="github-footer">
+        <a href="https://github.com/Shabi-x/MyResume" target="_blank" rel="noopener noreferrer" className="github-link">
+          <div className="github-avatar">
+            <img src={githubLogo} alt="GitHub" />
+          </div>
+          <span className="github-text">Create Your Own Resume By Forking This Template?</span>
+        </a>
+        <button onClick={() => exportPDF()} className="download-btn">
+          Download as PDF
+        </button>
       </div>
     </div>
   );

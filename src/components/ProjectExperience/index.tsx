@@ -60,7 +60,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       <div className="project-header">
         <div className="project-name">{projectName}</div>
         <div className="response-job">{responseJob}</div>
-        <a className="link">{link}</a>
+        <a className="link" href={link} target="_blank" rel="noopener noreferrer">{link}</a>
         <div className="project-time">{projectTime}</div>
       </div>
       <div className="project-description">{projectDescription}</div>
