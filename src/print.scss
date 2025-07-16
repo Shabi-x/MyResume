@@ -10,18 +10,19 @@ $base-gap: 0.65mm;
     padding: 0 !important;
     box-sizing: border-box !important;
   }
-  
-  html, body {
+
+  html,
+  body {
     width: 100% !important;
     height: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
     overflow: hidden !important;
   }
-  
-  a{
+
+  a {
     width: min-content;
-    .link {    
+    .link {
       text-decoration: underline !important;
       color: #70a1ff !important;
     }
@@ -32,12 +33,13 @@ $base-gap: 0.65mm;
     margin: 0 !important;
     padding: 0 10px !important;
   }
-  
+
   /* 隐藏不需要打印的元素 */
-  .download-btn, .print-instructions {
+  .download-btn,
+  .print-instructions {
     display: none !important;
   }
-  
+
   /* 内容容器 */
   .content {
     height: auto !important;
@@ -52,18 +54,19 @@ $base-gap: 0.65mm;
     transform: scale(1) !important;
     transform-origin: top center !important;
   }
-  
+
   /* 基本信息部分 */
   .person {
     margin-bottom: $base-gap !important;
   }
-  
+
   .person-info .name {
     font-size: 24px !important;
     letter-spacing: 1px !important;
   }
-  
-  .basic-info-title, .basic-info {
+
+  .basic-info-title,
+  .basic-info {
     font-size: 14px !important;
     padding: 0.5mm 0 1mm 0 !important;
     border-bottom-width: 1px !important;
@@ -73,19 +76,20 @@ $base-gap: 0.65mm;
     align-items: center !important;
     border-bottom: 1px solid #4b7bec !important;
   }
-  
+
   .basic-info {
     padding: 0.35mm 0 !important;
   }
-  
+
   /* 项目经历标题中的logo样式 */
   .basic-info .company-logo {
     height: 14px !important;
     margin-left: auto !important;
     display: block !important;
   }
-  
-  .basic-info-title .title, .basic-info .title {
+
+  .basic-info-title .title,
+  .basic-info .title {
     font-size: 12px !important;
     padding-left: 4mm !important;
     color: #a5b1c2 !important;
@@ -93,7 +97,7 @@ $base-gap: 0.65mm;
     letter-spacing: 0.5px !important;
     align-self: flex-end !important;
   }
-  
+
   .title {
     font-size: 10px !important;
     padding-left: 2mm !important;
@@ -102,51 +106,66 @@ $base-gap: 0.65mm;
     letter-spacing: 0.5px !important;
   }
   /* 信息项 */
-  .information .info-item, .information .info-item-long {
+  .information .info-item,
+  .information .info-item-long {
     font-size: 12spx !important;
     padding: 0.5mm 0 !important;
     line-height: 1.2 !important;
     font-weight: 300 !important;
   }
-  
+
   /* 开源经历、实习经历、项目经历 */
   .con {
     margin-bottom: $base-gap !important;
   }
-  
+
   /* 实习经历和项目经历的标题 */
-  .item-header, .project-header {
+  .item-header,
+  .project-header {
     margin: 0.5mm 0 !important;
     padding: 0.4mm 0.5mm !important;
-    .project-time, .response-job{
+    .link {
+      font-size: 12px !important;
+      text-decoration: underline !important;
+      color: #70a1ff !important;
+      margin-left: 50px !important;
+    }
+    .project-time {
       font-size: 10px !important;
+      margin: 0 0 0 auto !important;
     }
   }
-  
-  .item-header  .item-header .company, .item-header .job {
+
+  .item-header .item-header .company,
+  .item-header .job {
     font-size: $base-font !important;
   }
-  .time{
+  .time {
     font-size: 10px !important;
+  }
+  .company {
+    font-size: 10px !important;
+    margin: 0 10px !important;
   }
 
   .item-header .company-logo {
     height: 14px !important;
   }
-  
+
   /* 描述内容 */
   .discription .detail {
     font-size: $base-font !important;
   }
-  
+
   .discription .discription-line {
     font-size: $base-font !important;
     padding: 0.4mm 0 !important;
     line-height: 1.1 !important;
   }
-  
+
   /* 所有圆圈的通用样式 */
-  .circle, .discription-line .circle {
+  .circle,
+  .discription-line .circle {
     width: 12px !important;
     min-width: 12px !important;
     height: 12px !important;
@@ -160,7 +179,7 @@ $base-gap: 0.65mm;
     color: #fff !important;
     font-weight: 800 !important;
   }
-  
+
   /* 开源经历部分样式 */
   .openSource .discription-line {
     width: 100% !important;
@@ -170,50 +189,50 @@ $base-gap: 0.65mm;
     line-height: 1.1 !important;
     font-weight: 300 !important;
   }
-  
+
   /* 项目描述 */
   .project-description {
     font-size: $base-font !important;
   }
-  
+
   /* 项目列表 */
   .project-details li {
     font-size: $base-font !important;
     line-height: 1.1 !important;
   }
-  
+
   /* 技术栈 */
   .techStack {
     height: 100%;
     gap: 0.8mm !important;
     display: flex !important;
     align-items: center !important;
-    .techStack-title{
+    .techStack-title {
       height: 100%;
       display: flex !important;
       align-items: center !important;
     }
   }
-  
+
   .techStack .stack {
     height: 100%;
     font-size: 9px !important;
     padding: 0.4mm 1mm !important;
     border-radius: 2px !important;
   }
-  
+
   /* 技能部分 */
   .skills {
     margin-bottom: $base-gap !important;
   }
-  
+
   .skills li.skill {
     font-size: $base-font !important;
     padding: 0.4mm 0 !important;
     line-height: 1.1 !important;
     display: flex !important;
   }
-  
+
   /* 确保A4尺寸和边距 */
   @page {
     size: A4 portrait;
@@ -230,11 +249,11 @@ $base-gap: 0.65mm;
   text-align: center;
   color: #495057;
   font-size: 14px;
-  
+
   p {
     margin: 5px 0;
   }
-  
+
   @media print {
     display: none !important;
   }

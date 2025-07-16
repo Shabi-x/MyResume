@@ -17,6 +17,7 @@ const projectList = [
       "同时担任企业微信侧南邮小程序客服，根据全校师生反馈问题思考解决方案，及时Oncall；",
     ],
     techStack: ["React", "TypeScript", "Taro", "Redux-toolkit", "pnpm"],
+    link: "https://qingyou.njupt.edu.cn/",
   },
   // {
   //   projectName: "南邮年度报告单",
@@ -59,7 +60,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       <div className="project-header">
         <div className="project-name">{projectName}</div>
         <div className="response-job">{responseJob}</div>
-        <div className="link">{link}</div>
+        <a className="link">{link}</a>
         <div className="project-time">{projectTime}</div>
       </div>
       <div className="project-description">{projectDescription}</div>
