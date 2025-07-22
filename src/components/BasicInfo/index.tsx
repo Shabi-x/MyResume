@@ -44,7 +44,7 @@ const BasicInfo = () => {
           <span style={{ fontWeight: "bold", fontSize: "18px" }}>
             个人主页：
           </span>
-          <span className="link">https://shabix.fun</span>
+          <span className="link">https://me.shabix.fun</span>
         </a>
         <div className="info-item-long" style={{fontWeight: "300"}}>
           <span style={{ fontWeight: "bold", fontSize: "18px" }}>
