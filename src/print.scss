@@ -20,13 +20,7 @@ $base-gap: 0.65mm;
     overflow: hidden !important;
   }
 
-  a {
-    width: min-content;
-    .link {
-      text-decoration: underline !important;
-      color: #70a1ff !important;
-    }
-  }
+
   .App {
     width: 100% !important;
     max-width: 100% !important;
@@ -75,6 +69,14 @@ $base-gap: 0.65mm;
     display: flex !important;
     align-items: center !important;
     border-bottom: 1px solid #4b7bec !important;
+    a {
+    width: min-content;
+    height: 100%;
+    .link {
+      text-decoration: underline !important;
+        color: #70a1ff !important;
+      }
+    }
   }
 
   .basic-info {
@@ -112,6 +114,9 @@ $base-gap: 0.65mm;
     padding: 0.5mm 0 !important;
     line-height: 1.2 !important;
     font-weight: 300 !important;
+    a{
+      height: 100% !important;
+    }
   }
 
   /* 开源经历、实习经历、项目经历 */
@@ -138,6 +143,7 @@ $base-gap: 0.65mm;
 
   .item-header .item-header .company,
   .item-header .job {
+    margin-left: 8px !important;
     font-size: $base-font !important;
   }
   .time {
