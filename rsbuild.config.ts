@@ -9,7 +9,7 @@ export default defineConfig({
   ],
   html: {
     template: './public/index.html',
-    title: '26届前端实习简历'
+    title: '26届-前端-梁少峻-南京邮电大学'
   },
   output: {
     distPath: {
