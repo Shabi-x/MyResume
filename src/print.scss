@@ -170,7 +170,7 @@ $base-gap: 0.65mm;
 
   .discription .discription-line {
     font-size: $base-font !important;
-    padding: 0.4mm 0 !important;
+    padding: 0.25mm 0 !important;
     line-height: 1.1 !important;
     
     .content-text {
@@ -217,12 +217,28 @@ $base-gap: 0.65mm;
   /* 项目描述 */
   .project-description {
     font-size: $base-font !important;
+    padding: 0 0 !important;
+    strong {
+      font-weight: 400 !important;
+      color: inherit !important;
+      display: inline !important;
+    }
   }
 
   /* 项目列表 */
   .project-details li {
     font-size: $base-font !important;
     line-height: 1.1 !important;
+    
+    .list-content {
+      flex: 1 !important;
+      
+      strong {
+        font-weight: 400 !important;
+        color: inherit !important;
+        display: inline !important;
+      }
+    }
   }
 
   /* 技术栈 */
@@ -231,6 +247,7 @@ $base-gap: 0.65mm;
     gap: 0.8mm !important;
     display: flex !important;
     align-items: center !important;
+    padding: 0 0 !important;
     .techStack-title {
       height: 100%;
       display: flex !important;

@@ -6,25 +6,20 @@ import tencentLogo from "../../logo/tencent.png";
 // 高亮关键词数组
 const highlightKeywords = [
   // 技术栈
-  "React", "Vue", "TypeScript", "JavaScript", "Node.js", "Express", "TDesign", "Antd", "fabricjs",
-  "WebWorker", "Vite", "Monorepo", "Wujie微前端", "Vue2.7/3.4", "React18", "Antdesign", "Antd Mobile",
-  "sheetjs/XLSX", "file-saver", "ResizeObserver", "intersectionObserver", "i18n",
+  "sheetjs/XLSX", "file-saver", "ResizeObserver", "intersectionObserver",
   
   // 业务术语
-  "flux-Component", "flux-mutiple-search", "flux-cascader-logic", "flux-tag-upload", "useProgress",
-  "useMarkTool", "EventBus", "wujie", "openai", "mcp tools", "tapd", "markdown", "json",
+  "EventBus", "wujie",
   
   // 技术概念
-  "双栈数据结构", "比例变换矩阵", "坐标系统映射", "虚拟列表", "双列瀑布流", "无限滚动",
-  "主线程", "子线程", "webworker线程", "二进制数据", "算法", "Flex布局",
+  "双栈数据结构", "不同分辨率设备上保持原始空间比例关系", "虚拟列表", "双列瀑布流", "无限滚动",
+  "webworker线程", "二进制数据", "批量精准搜索能力", "支持与或逻辑的级联选择器",
   
   // 数字和成果
-  "14个", "4个", "50%", "0到1", "从无到有", "从0到1",
+  "14个", "4个", "50%", "0到1",
   
   // 业务关键词
-  "腾讯游戏", "流量生态部", "广告投放", "素材中心", "数据中心", "媒体中心", "AI Agent",
-  "快手", "财务研发组", "ToB系统", "企业权限中台", "财务核销平台", "供应商发票协同系统",
-  "铁豆项目", "移动端H5", "差旅应用", "Kim内置应用"
+  "AI Agent", "语言国际化", "主题个性化", "腾讯游戏-流量生态部-游戏广告投放"
 ];
 
 // 文本高亮处理函数
@@ -46,7 +41,7 @@ const highlightText = (text: string): React.ReactNode => {
     );
     
     return isKeyword ? (
-      <strong key={index} style={{ fontWeight: '500' }}>{part}</strong>
+      <strong key={index} style={{ fontWeight: '400' }}>{part}</strong>
     ) : (
       part
     );
@@ -86,7 +81,7 @@ const mock: InternShipType[] = [
     commpanyLogoUrl: tencentLogo,
     discription: "",
     workContent: [
-      "参与腾讯游戏-流量生态部-游戏广告投放业务线大O2流量池项目的开发、维护工作；该项目面向腾讯游戏下属各个工作室部门、代投商，提供了腾讯游戏实现媒体买量、内容带量实现用户增长的一套集投放策略制定、素材审核、广告投放、广告数据归因为一体的广告投放平台；",
+      "参与腾讯游戏-流量生态部-游戏广告投放业务线大O2流量池项目的开发、维护工作；该项目面向腾讯游戏下属各个工作室部门、代投商，提供腾讯游戏实现媒体买量、内容带量实现用户增长的一套集投放策略制定、素材审核、广告投放、广告数据归因为一体的广告投放平台；",
       "实习期间深度参与素材中心、数据中心、媒体中心等模块的建设、迭代工作：共计完成产品迭代需求单14个、同时负责沉淀多个flux-Component业务组件以提升研效，共计沉淀公共组件4个、并积极参与AI Agent开发能力落地的探索与实践；"
     ],
     workTechContent: [

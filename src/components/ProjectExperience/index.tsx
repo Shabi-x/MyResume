@@ -3,13 +3,58 @@ import qingyouLogo from "../../logo/qingyou.png";
 
 import "./index.scss";
 
+// 高亮关键词数组
+const highlightKeywords = [
+  // 技术栈
+  "IntersectionObserver", "FontFaceObserver", "usePreLoadImage", "usePreloadFonts",
+  "redux-logger",
+  
+  // 业务术语和功能
+  "附件预览", "无限滚动", "静态资源预加载", "移动端适配",
+  
+  // 技术概念
+  "UI层与业务逻辑层解耦", "2D， 3D动画交互效果",
+  
+  // 数字和成果
+  "日活用户1W+",
+  
+  // 业务关键词
+  "青柚工作室",
+];
+
+// 文本高亮处理函数
+const highlightText = (text: string): React.ReactNode => {
+  if (!text) return text;
+  
+  // 创建正则表达式，匹配所有关键词
+  const regex = new RegExp(`(${highlightKeywords.map(keyword => 
+    keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') // 转义特殊字符
+  ).join('|')})`, 'gi');
+  
+  // 分割文本并处理高亮
+  const parts = text.split(regex);
+  
+  return parts.map((part, index) => {
+    // 检查是否为关键词（忽略大小写）
+    const isKeyword = highlightKeywords.some(keyword => 
+      keyword.toLowerCase() === part.toLowerCase()
+    );
+    
+    return isKeyword ? (
+      <strong key={index} style={{ fontWeight: '400' }}>{part}</strong>
+    ) : (
+      part
+    );
+  });
+};
+
 const projectList = [
   {
     projectName: "南邮小程序",
     responseJob: "（前端负责人）",
     projectTime: "2023.07 - 至今",
     projectDescription:
-      "南邮小程序(官方用名“南京邮电大学”)，是青柚工作室为师生提供课表，晨跑，一卡通，成绩查询，场地预约等功能而开发的微信小程序，日活用户1W+。",
+      "南邮小程序(又名“南京邮电大学”)，是青柚工作室为师生提供课表、晨跑、一卡通、成绩查询、场地预约等功能而开发的微信小程序，日活用户1W+。",
     projectList: [
       "开发业务：校园资讯（利用dangerouslySetInnerHTML实现小程序富文本渲染、附件预览）；针对微信丢失、本硕连读用户账号变更问题搭建用户解绑页，设计使用状态控制动画的思路实现登录过程中复杂的动画效果；利用IntersectionObserver实现校园资讯页列表无限滚动；仿照豆瓣UI重构图书馆模块，实现对于书籍详细信息，图书馆藏，借阅记录的查阅；开发消息盒子通知等模块；",
       "业务代码模块化：将UI层与业务逻辑层解耦，实现数据驱动与UI渲染的分离；实现pendingCacheQueue对于请求做缓存优化，状态管理、接入了redux-logger中间件，实现日志跟踪实现封装；",
@@ -63,11 +108,12 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         <a className="link" href={link} target="_blank" rel="noopener noreferrer">{link}</a>
         <div className="project-time">{projectTime}</div>
       </div>
-      <div className="project-description">{projectDescription}</div>
+      <div className="project-description">{typeof projectDescription === 'string' ? highlightText(projectDescription) : projectDescription}</div>
       <ul className="project-details">
         {projectList.map((item, index) => (
           <li key={index}>
-            {index + 1}. {item}
+            <span className="list-number">{index + 1}.</span>
+            <span className="list-content">{highlightText(item)}</span>
           </li>
         ))}
       </ul>

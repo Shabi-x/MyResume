@@ -39,6 +39,11 @@
     font-size: 16.5px; /* 11px * 1.5 */
     line-height: 1.5; /* 保持不变 */
     padding: 5px 0 0 0; /* 1px * 1.5 */
+    
+    strong {
+      font-weight: 400;
+      display: inline;
+    }
   }
 
   .project-details {
@@ -50,6 +55,16 @@
       font-size: 16.5px; /* 11px * 1.5 */
       letter-spacing: 0.5px;
       padding: 2.5px;
+      display: flex;
+      
+      .list-content {
+        flex: 1;
+        
+        strong {
+          font-weight: 400;
+          display: inline;
+        }
+      }
     }
   }
 
