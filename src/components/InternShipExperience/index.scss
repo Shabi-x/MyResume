@@ -92,6 +92,17 @@
       color: #fff;
       font-weight: 800;
     }
+
+    .content-text {
+      flex: 1;
+      line-height: 1.4;
+      word-wrap: break-word;
+      
+      strong {
+        font-weight: 400;
+        display: inline;
+      }
+    }
   }
 }
 

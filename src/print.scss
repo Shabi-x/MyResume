@@ -18,6 +18,8 @@ $base-gap: 0.65mm;
     margin: 0 !important;
     padding: 0 !important;
     overflow: hidden !important;
+    color: #000 !important;
+    font-weight: 400 !important;
   }
 
 
@@ -72,6 +74,9 @@ $base-gap: 0.65mm;
     a {
     width: min-content;
     height: 100%;
+    padding: 0 !important;
+    line-height: 1 !important;
+    margin: 0 !important;
     .link {
       text-decoration: underline !important;
         color: #70a1ff !important;
@@ -167,6 +172,19 @@ $base-gap: 0.65mm;
     font-size: $base-font !important;
     padding: 0.4mm 0 !important;
     line-height: 1.1 !important;
+    
+    .content-text {
+      flex: 1 !important;
+      line-height: 1.1 !important;
+      word-wrap: break-word !important;
+      
+      /* 高亮关键词样式 */
+      strong {
+        font-weight: 400 !important;
+        color: inherit !important;
+        display: inline !important;
+      }
+    }
   }
 
   /* 所有圆圈的通用样式 */
